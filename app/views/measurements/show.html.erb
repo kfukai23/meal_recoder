@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @measurement.weight %>
+</p>
+
+<p>
+  <strong>Fat percentage:</strong>
+  <%= @measurement.fat_percentage %>
+</p>
+
+<p>
+  <strong>Measured on:</strong>
+  <%= @measurement.measured_on %>
+</p>
+
+<%= link_to 'Edit', edit_measurement_path(@measurement) %> |
+<%= link_to 'Back', measurements_path %>
